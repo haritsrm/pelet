@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', function() {
     return view('user.dashboard');
 })->name('Dashboard');
+
+Route::get('/profile', function() {
+    return view('user.profile');
+})->name('Management Profile');
