@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
@@ -38,3 +38,6 @@ Route::get('/MSEUndangan', function() {
 Route::get('/MSEUndangan/tambah_undangan', function() {
     return view('externals.newundangan');
 })->name('Upload Surat Undangan');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
