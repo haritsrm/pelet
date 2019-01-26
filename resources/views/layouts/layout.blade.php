@@ -84,14 +84,14 @@
 
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-git-compare"></i>
-						<span class="visible-xs-inline-block position-right">Git updates</span>
+						<i class="icon-calendar22"></i>
+						<span class="visible-xs-inline-block position-right">Tugas</span>
 						<span class="badge bg-warning-400">9</span>
 					</a>
 					
 					<div class="dropdown-menu dropdown-content">
 						<div class="dropdown-content-heading">
-							Git updates
+							Tugas
 							<ul class="icons-list">
 								<li><a href="#"><i class="icon-sync"></i></a></li>
 							</ul>
@@ -182,14 +182,14 @@
 
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-bubbles4"></i>
-						<span class="visible-xs-inline-block position-right">Messages</span>
+						<i class="icon-bell3"></i>
+						<span class="visible-xs-inline-block position-right">Pemberitahuan</span>
 						<span class="badge bg-warning-400">2</span>
 					</a>
 					
 					<div class="dropdown-menu dropdown-content width-350">
 						<div class="dropdown-content-heading">
-							Messages
+							Pemberitahuan
 							<ul class="icons-list">
 								<li><a href="#"><i class="icon-compose"></i></a></li>
 							</ul>
@@ -239,30 +239,6 @@
 									<span class="text-muted">But that would be extremely strained and suspicious...</span>
 								</div>
 							</li>
-
-							<li class="media">
-								<div class="media-left"><img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
-								<div class="media-body">
-									<a href="#" class="media-heading">
-										<span class="text-semibold">Beatrix Diaz</span>
-										<span class="media-annotation pull-right">Tue</span>
-									</a>
-
-									<span class="text-muted">What a strenuous career it is that I've chosen...</span>
-								</div>
-							</li>
-
-							<li class="media">
-								<div class="media-left"><img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
-								<div class="media-body">
-									<a href="#" class="media-heading">
-										<span class="text-semibold">Richard Vango</span>
-										<span class="media-annotation pull-right">Mon</span>
-									</a>
-									
-									<span class="text-muted">Other travelling salesmen live a life of luxury...</span>
-								</div>
-							</li>
 						</ul>
 
 						<div class="dropdown-content-footer">
@@ -273,18 +249,24 @@
 
 				<li class="dropdown dropdown-user">
 					<a class="dropdown-toggle" data-toggle="dropdown">
-						<img src="/assets/images/placeholder.jpg" alt="">
-						<span>Victoria</span>
+						<img src="/images/profile/placeholder.jpg" alt="">
+						<span>{{ Auth::user()->name }}</span>
 						<i class="caret"></i>
 					</a>
 
 					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
-						<li><a href="#"><i class="icon-coins"></i> My balance</a></li>
-						<li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+						<li><a href="{{ route('Management Profile') }}"><i class="icon-user-plus"></i> My profile</a></li>
 						<li class="divider"></li>
-						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
-						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+						<li>
+							<a href="{{ route('logout') }}" onclick="event.preventDefault();
+												document.getElementById('logout-form').submit();">
+								<i class="icon-switch2"></i> Logout
+							</a>
+
+							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+								@csrf
+							</form>
+						</li>
 					</ul>
 				</li>
 			</ul>
@@ -307,18 +289,18 @@
 					<div class="sidebar-user">
 						<div class="category-content">
 							<div class="media">
-								<a href="#" class="media-left"><img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+								<a href="#" class="media-left"><img src="/images/profile/placeholder.jpg" class="img-circle img-sm" alt=""></a>
 								<div class="media-body">
-									<span class="media-heading text-semibold">Victoria Baker</span>
+									<span class="media-heading text-semibold">{{ Auth::user()->name }}</span>
 									<div class="text-size-mini text-muted">
-										<i class="icon-pin text-size-small"></i> &nbsp;Santa Ana, CA
+										<i class="icon-pin text-size-small"></i> &nbsp;Bandung
 									</div>
 								</div>
 
 								<div class="media-right media-middle">
 									<ul class="icons-list">
 										<li>
-											<a href="#"><i class="icon-cog3"></i></a>
+											<a href="{{ route('Management Profile') }}"><i class="icon-cog3"></i></a>
 										</li>
 									</ul>
 								</div>
@@ -400,7 +382,7 @@
 
 					<!-- Footer -->
 					<div class="footer text-muted">
-						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+						&copy; {{ date('Y') }}. Sistem PELET, Bandung
 					</div>
 					<!-- /footer -->
                 </div>

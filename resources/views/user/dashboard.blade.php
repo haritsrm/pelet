@@ -24,12 +24,12 @@
 								<div class="media panel-body no-margin">
 									<div class="media-left">
 										<a href="#">
-											<img src="assets/images/placeholder.jpg" style="width: 68px; height: 68px;" class="img-circle" alt="">
+											<img src="/images/profile/placeholder.jpg" style="width: 68px; height: 68px;" class="img-circle" alt="">
 										</a>
 									</div>
 
 									<div class="media-body">
-										<h6 class="media-heading text-semibold">James Alexander</h6>
+										<h6 class="media-heading text-semibold">{{ Auth::user()->name }}</h6>
 										<p>So slit more darn hey well wore submissive savage this shark aardvark fumed thoughtfully much drank when angelfish so outgrew some alas vigorously therefore warthog superb less oh groundhog less alas gibbered barked some hey despicably with aesthetic hamster jay by luckily</p>
 
 										<ul class="list-inline list-inline-separate no-margin">
