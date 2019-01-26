@@ -65,7 +65,7 @@
 	
 </head>
 
-<body class="navbar-top">
+<body class="navbar-top sidebar-xs">
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-default navbar-fixed-top header-highlight">
