@@ -26,3 +26,7 @@ Route::get('/dashboard', function() {
 Route::get('/profile', function() {
     return view('user.profile');
 })->name('Management Profile');
+
+Route::get('/MSEUndangan', function() {
+    return view('externals.undangan');
+})->name('Surat Undangan');

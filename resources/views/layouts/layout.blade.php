@@ -18,25 +18,31 @@
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="/assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/pickers/daterangepicker.js"></script>
 
-	<script type="text/javascript" src="assets/js/core/app.js"></script>
-	<script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script type="text/javascript" src="/assets/js/core/app.js"></script>
+
+	<script type="text/javascript" src="/assets/js/pages/datatables_basic.js"></script>
+	<script type="text/javascript" src="/assets/js/pages/dashboard.js"></script>
+	<script type="text/javascript" src="assets/js/pages/user_profile_tabbed.js"></script>
 	<!-- /theme JS files -->
-
+	
 </head>
 
 <body class="navbar-top">
@@ -310,14 +316,14 @@
 								<!-- Main -->
 								<li class="navigation-header"><span>Utama</span> <i class="icon-menu" title="Main pages"></i></li>
 								<li {{{ Request::is('dashboard') ? 'class=active' : '' }}}><a href="{{ route('Dashboard') }}"><i class="icon-home4"></i> <span>Beranda</span></a></li>
-								<li {{{ Request::is('profile') ? 'class=active' : '' }}}><a href="{{ route('Dashboard') }}"><i class="icon-user"></i> <span>Profil</span></a></li>
+								<li {{{ Request::is('profile') ? 'class=active' : '' }}}><a href="{{ route('Management Profile') }}"><i class="icon-user"></i> <span>Profil</span></a></li>
 								<li {{{ Request::is('calendar') ? 'class=active' : '' }}}><a href="{{ route('Dashboard') }}"><i class="icon-calendar22"></i> <span>Kalender</span></a></li>
 
                                 <li class="navigation-header"><span>Manajemen</span> <i class="icon-menu" title="Management pages"></i></li>
                                 <li>
 									<a href="#"><i class="icon-folder2"></i> <span>Surat Eksternal</span></a>
 									<ul>
-                                        <li><a href="">Undangan</a></li>
+                                        <li {{{ Request::is('MSEUndangan') ? 'class=active' : '' }}}><a href="{{ route('Surat Undangan') }}">Undangan</a></li>
                                         <li><a href="">Disposisi Pimpinan</a></li>
                                         <li><a href="">Nota Dinas</a></li>
                                         <li><a href="">Surat Permohonan</a></li>
