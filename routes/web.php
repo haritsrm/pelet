@@ -19,25 +19,26 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/dashboard', function() {
-    return view('user.dashboard');
-})->name('Dashboard');
-
-Route::get('/profile', function() {
-    return view('user.profile');
-})->name('Management Profile');
-
-Route::get('/calendar', function() {
-    return view('user.calendar');
-})->name('Kalender');
-
-Route::get('/MSEUndangan', function() {
-    return view('externals.undangan');
-})->name('Surat Undangan');
-
-Route::get('/MSEUndangan/tambah_undangan', function() {
-    return view('externals.newundangan');
-})->name('Upload Surat Undangan');
-Auth::routes();
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/dashboard', function() {
+        return view('user.dashboard');
+    })->name('Dashboard');
+    
+    Route::get('/profile', function() {
+        return view('user.profile');
+    })->name('Management Profile');
+    
+    Route::get('/calendar', function() {
+        return view('user.calendar');
+    })->name('Kalender');
+    
+    Route::get('/MSEUndangan', function() {
+        return view('externals.undangan');
+    })->name('Surat Undangan');
+    
+    Route::get('/MSEUndangan/tambah_undangan', function() {
+        return view('externals.newundangan');
+    })->name('Upload Surat Undangan');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
