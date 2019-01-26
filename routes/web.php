@@ -26,3 +26,15 @@ Route::get('/dashboard', function() {
 Route::get('/profile', function() {
     return view('user.profile');
 })->name('Management Profile');
+
+Route::get('/calendar', function() {
+    return view('user.calendar');
+})->name('Kalender');
+
+Route::get('/MSEUndangan', function() {
+    return view('externals.undangan');
+})->name('Surat Undangan');
+
+Route::get('/MSEUndangan/tambah_undangan', function() {
+    return view('externals.newundangan');
+})->name('Upload Surat Undangan');
