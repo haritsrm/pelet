@@ -11,14 +11,14 @@
 									<div class="panel-body bg-indigo-400 border-radius-top text-center" style="background-image: url(http://demo.interface.club/limitless/assets/images/bg.png); background-size: contain;">
 										<div class="content-group-sm">
 											<h6 class="text-semibold no-margin-bottom">
-												Victoria Davidson
+												{{ Auth::user()->name }}
 											</h6>
 
 											<span class="display-block">Head of UX</span>
 										</div>
 
 										<a href="#" class="display-inline-block content-group-sm">
-											<img src="assets/images/placeholder.jpg" class="img-circle img-responsive" alt="" style="width: 110px; height: 110px;">
+											<img src="/images/profile/placeholder.jpg" class="img-circle img-responsive" alt="" style="width: 110px; height: 110px;">
 										</a>
 
 										<ul class="list-inline list-inline-condensed no-margin-bottom">
@@ -30,7 +30,16 @@
 
 									<div class="panel no-border-top no-border-radius-top">
 										<ul class="navigation">
-											<li><a href="login_advanced.html"><i class="icon-switch2"></i> Keluar</a></li>
+											<li>
+												<a href="{{ route('logout') }}" onclick="event.preventDefault();
+																				document.getElementById('logout-form').submit();">
+													<i class="icon-switch2"></i> Logout
+												</a>
+
+												<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+													@csrf
+												</form>
+											</li>
 										</ul>
 									</div>
 								</div>
