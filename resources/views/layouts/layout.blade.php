@@ -36,9 +36,16 @@
 	<script type="text/javascript" src="/assets/js/plugins/tables/datatables/datatables.min.js"></script>
 	<script type="text/javascript" src="/assets/js/plugins/forms/selects/select2.min.js"></script>
 
+	<script type="text/javascript" src="assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/fullcalendar/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/fullcalendar/lang/ar.js"></script>
+
 	<script type="text/javascript" src="/assets/js/core/app.js"></script>
 
 	<script type="text/javascript" src="/assets/js/pages/datatables_basic.js"></script>
+	<script type="text/javascript" src="assets/js/pages/extra_fullcalendar_advanced.js"></script>
 	<script type="text/javascript" src="/assets/js/pages/dashboard.js"></script>
 	<script type="text/javascript" src="assets/js/pages/user_profile_tabbed.js"></script>
 	<!-- /theme JS files -->
@@ -317,7 +324,7 @@
 								<li class="navigation-header"><span>Utama</span> <i class="icon-menu" title="Main pages"></i></li>
 								<li {{{ Request::is('dashboard') ? 'class=active' : '' }}}><a href="{{ route('Dashboard') }}"><i class="icon-home4"></i> <span>Beranda</span></a></li>
 								<li {{{ Request::is('profile') ? 'class=active' : '' }}}><a href="{{ route('Management Profile') }}"><i class="icon-user"></i> <span>Profil</span></a></li>
-								<li {{{ Request::is('calendar') ? 'class=active' : '' }}}><a href="{{ route('Dashboard') }}"><i class="icon-calendar22"></i> <span>Kalender</span></a></li>
+								<li {{{ Request::is('calendar') ? 'class=active' : '' }}}><a href="{{ route('Kalender') }}"><i class="icon-calendar22"></i> <span>Kalender</span></a></li>
 
                                 <li class="navigation-header"><span>Manajemen</span> <i class="icon-menu" title="Management pages"></i></li>
                                 <li>
@@ -367,7 +374,7 @@
 
 				<!-- Content area -->
 				<div class="content">
-                    <div class="page-header">
+                    <div class="page-header" style="margin-top:-30px;margin-bottom:-10px">
                         <div class="page-header-content">
                             <div class="page-title">
                                 <h4>

@@ -30,7 +30,7 @@
 
 									<div class="panel no-border-top no-border-radius-top">
 										<ul class="navigation">
-											<li><a href="login_advanced.html"><i class="icon-switch2"></i> Log out</a></li>
+											<li><a href="login_advanced.html"><i class="icon-switch2"></i> Keluar</a></li>
 										</ul>
 									</div>
 								</div>
@@ -46,7 +46,7 @@
 									<!-- Account settings -->
 									<div class="panel panel-flat border-top-info panel-collapsed">
 										<div class="panel-heading">
-											<h6 class="panel-title">Account settings</h6>
+											<h6 class="panel-title">Pengaturan Akun</h6>
 											<div class="heading-elements">
 												<ul class="icons-list">
 							                		<li><a data-action="collapse"></a></li>
@@ -161,11 +161,11 @@
 										</div>
 									</div>
 									<!-- /account settings -->
-                                    
+
                                     <!-- Profile info -->
 									<div class="panel panel-flat border-top-success">
 										<div class="panel-heading">
-											<h6 class="panel-title">Profile information</h6>
+											<h6 class="panel-title">Informasi Profil</h6>
 											<div class="heading-elements">
 												<ul class="icons-list">
 							                		<li><a data-action="collapse"></a></li>
