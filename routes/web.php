@@ -34,3 +34,7 @@ Route::get('/calendar', function() {
 Route::get('/MSEUndangan', function() {
     return view('externals.undangan');
 })->name('Surat Undangan');
+
+Route::get('/MSEUndangan/tambah_undangan', function() {
+    return view('externals.newundangan');
+})->name('Upload Surat Undangan');

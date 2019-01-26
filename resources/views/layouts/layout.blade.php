@@ -10,11 +10,11 @@
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<link href="/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="/assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="/assets/css/colors.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
@@ -36,18 +36,31 @@
 	<script type="text/javascript" src="/assets/js/plugins/tables/datatables/datatables.min.js"></script>
 	<script type="text/javascript" src="/assets/js/plugins/forms/selects/select2.min.js"></script>
 
-	<script type="text/javascript" src="assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/fullcalendar/fullcalendar.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/fullcalendar/lang/ar.js"></script>
+	<script type="text/javascript" src="/assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/ui/fullcalendar/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/ui/fullcalendar/lang/ar.js"></script>
+
+	<script type="text/javascript" src="/assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script type="text/javascript" src="/assets/js/plugins/notifications/jgrowl.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/pickers/anytime.min.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/pickers/pickadate/legacy.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/uploaders/dropzone.min.js"></script>
 
 	<script type="text/javascript" src="/assets/js/core/app.js"></script>
 
+	<script type="text/javascript" src="/assets/js/pages/uploader_dropzone.js"></script>
+	<script type="text/javascript" src="/assets/js/pages/form_select2.js"></script>
+	<script type="text/javascript" src="/assets/js/pages/picker_date.js"></script>
 	<script type="text/javascript" src="/assets/js/pages/datatables_basic.js"></script>
-	<script type="text/javascript" src="assets/js/pages/extra_fullcalendar_advanced.js"></script>
+	<script type="text/javascript" src="/assets/js/pages/extra_fullcalendar_advanced.js"></script>
 	<script type="text/javascript" src="/assets/js/pages/dashboard.js"></script>
-	<script type="text/javascript" src="assets/js/pages/user_profile_tabbed.js"></script>
+	<script type="text/javascript" src="/assets/js/pages/user_profile_tabbed.js"></script>
 	<!-- /theme JS files -->
 	
 </head>
@@ -57,7 +70,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-default navbar-fixed-top header-highlight">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt="" style="width:150px;height:50px;margin-top:-12px"></a>
+			<a class="navbar-brand" href="/"><img src="/assets/images/logo.png" alt="" style="width:150px;height:50px;margin-top:-12px;margin-left:30px"></a>
 
 			<ul class="nav navbar-nav visible-xs-block">
 				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
@@ -153,17 +166,17 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown language-switch">
 					<a class="dropdown-toggle" data-toggle="dropdown">
-						<img src="assets/images/flags/gb.png" class="position-left" alt="">
+						<img src="/assets/images/flags/gb.png" class="position-left" alt="">
 						English
 						<span class="caret"></span>
 					</a>
 
 					<ul class="dropdown-menu">
-						<li><a class="deutsch"><img src="assets/images/flags/de.png" alt=""> Deutsch</a></li>
-						<li><a class="ukrainian"><img src="assets/images/flags/ua.png" alt=""> Українська</a></li>
-						<li><a class="english"><img src="assets/images/flags/gb.png" alt=""> English</a></li>
-						<li><a class="espana"><img src="assets/images/flags/es.png" alt=""> España</a></li>
-						<li><a class="russian"><img src="assets/images/flags/ru.png" alt=""> Русский</a></li>
+						<li><a class="deutsch"><img src="/assets/images/flags/de.png" alt=""> Deutsch</a></li>
+						<li><a class="ukrainian"><img src="/assets/images/flags/ua.png" alt=""> Українська</a></li>
+						<li><a class="english"><img src="/assets/images/flags/gb.png" alt=""> English</a></li>
+						<li><a class="espana"><img src="/assets/images/flags/es.png" alt=""> España</a></li>
+						<li><a class="russian"><img src="/assets/images/flags/ru.png" alt=""> Русский</a></li>
 					</ul>
 				</li>
 
@@ -185,7 +198,7 @@
 						<ul class="media-list dropdown-content-body">
 							<li class="media">
 								<div class="media-left">
-									<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
 									<span class="badge bg-danger-400 media-badge">5</span>
 								</div>
 
@@ -201,7 +214,7 @@
 
 							<li class="media">
 								<div class="media-left">
-									<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
 									<span class="badge bg-danger-400 media-badge">4</span>
 								</div>
 
@@ -216,7 +229,7 @@
 							</li>
 
 							<li class="media">
-								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-left"><img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
 								<div class="media-body">
 									<a href="#" class="media-heading">
 										<span class="text-semibold">Jeremy Victorino</span>
@@ -228,7 +241,7 @@
 							</li>
 
 							<li class="media">
-								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-left"><img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
 								<div class="media-body">
 									<a href="#" class="media-heading">
 										<span class="text-semibold">Beatrix Diaz</span>
@@ -240,7 +253,7 @@
 							</li>
 
 							<li class="media">
-								<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-left"><img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
 								<div class="media-body">
 									<a href="#" class="media-heading">
 										<span class="text-semibold">Richard Vango</span>
@@ -260,7 +273,7 @@
 
 				<li class="dropdown dropdown-user">
 					<a class="dropdown-toggle" data-toggle="dropdown">
-						<img src="assets/images/placeholder.jpg" alt="">
+						<img src="/assets/images/placeholder.jpg" alt="">
 						<span>Victoria</span>
 						<i class="caret"></i>
 					</a>
@@ -294,7 +307,7 @@
 					<div class="sidebar-user">
 						<div class="category-content">
 							<div class="media">
-								<a href="#" class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+								<a href="#" class="media-left"><img src="/assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
 								<div class="media-body">
 									<span class="media-heading text-semibold">Victoria Baker</span>
 									<div class="text-size-mini text-muted">

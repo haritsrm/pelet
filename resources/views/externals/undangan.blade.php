@@ -5,7 +5,7 @@
                     <!-- Basic datatable -->
                     <div class="panel panel-flat">
 						<div class="panel-heading">
-                            <a href="" class="btn btn-success"><span class="icon-pencil7"></span> Upload Surat Undangan</a>
+                            <a href="{{ route('Upload Surat Undangan') }}" class="btn btn-success"><span class="icon-pencil7"></span> Upload Surat Undangan</a>
 							<div class="heading-elements">
 								<ul class="icons-list">
 			                		<li><a data-action="collapse"></a></li>
